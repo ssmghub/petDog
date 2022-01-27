@@ -3,9 +3,9 @@
 <head>
 
 
- <meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-    <title>³èÎï¹·</title>
+    <title>å® ç‰©ç‹—</title>
 
 
    <link href="jsimg.css" rel="stylesheet" type="text/css">
@@ -18,19 +18,19 @@
  index=0,
  timer=null;
  
- // ¶¨Òå²¢µ÷ÓÃ×Ô¶¯²¥·Åº¯Êı
+ // å®šä¹‰å¹¶è°ƒç”¨è‡ªåŠ¨æ’­æ”¾å‡½æ•°
  timer = setInterval(autoPlay, 2000);
  
- // Êó±ê»®¹ıÕû¸öÈİÆ÷Ê±Í£Ö¹×Ô¶¯²¥·Å
+ // é¼ æ ‡åˆ’è¿‡æ•´ä¸ªå®¹å™¨æ—¶åœæ­¢è‡ªåŠ¨æ’­æ”¾
  wrap.onmouseover = function () {
  clearInterval(timer);
  }
  
- // Êó±êÀë¿ªÕû¸öÈİÆ÷Ê±¼ÌĞø²¥·ÅÖÁÏÂÒ»ÕÅ
+ // é¼ æ ‡ç¦»å¼€æ•´ä¸ªå®¹å™¨æ—¶ç»§ç»­æ’­æ”¾è‡³ä¸‹ä¸€å¼ 
  wrap.onmouseout = function () {
  timer = setInterval(autoPlay, 2000);
  }
- // ±éÀúËùÓĞÊı×Öµ¼º½ÊµÏÖ»®¹ıÇĞ»»ÖÁ¶ÔÓ¦µÄÍ¼Æ¬
+ // éå†æ‰€æœ‰æ•°å­—å¯¼èˆªå®ç°åˆ’è¿‡åˆ‡æ¢è‡³å¯¹åº”çš„å›¾ç‰‡
  for (var i = 0; i < list.length; i++) {
  list[i].onmouseover = function () {
  clearInterval(timer);
@@ -44,7 +44,7 @@
  changePic(index);
  }
  
- // ¶¨ÒåÍ¼Æ¬ÇĞ»»º¯Êı
+ // å®šä¹‰å›¾ç‰‡åˆ‡æ¢å‡½æ•°
  function changePic (curIndex) {
  for (var i = 0; i < pic.length; ++i) {
  pic[i].style.display = "none";
@@ -59,8 +59,8 @@
  </script> 
 
 
-<meta name="keywords" content="³èÎïÖ®¼Ò"/>
-<meta name="description" content="³èÎïÖ®¼ÒÎªÑø³èÓÃ»§Ìá¹©ÁË´ÓÓ­½ÓÒ»Ö»ĞÂ³èÎï¿ªÊ¼,Ö±ÖÁËü³ÉÎªÄúÉú»îÀïµÄÖØÒª³ÉÔ±ËùĞèµÄËùÓĞ·şÎñ,ÖÂÁ¦ÓÚ³ÉÎª¹úÄÚ×î´óµÄ³èÎïÉç½»Æ½Ì¨"/>
+<meta name="keywords" content="å® ç‰©ä¹‹å®¶"/>
+<meta name="description" content="å® ç‰©ä¹‹å®¶ä¸ºå…»å® ç”¨æˆ·æä¾›äº†ä»è¿æ¥ä¸€åªæ–°å® ç‰©å¼€å§‹,ç›´è‡³å®ƒæˆä¸ºæ‚¨ç”Ÿæ´»é‡Œçš„é‡è¦æˆå‘˜æ‰€éœ€çš„æ‰€æœ‰æœåŠ¡,è‡´åŠ›äºæˆä¸ºå›½å†…æœ€å¤§çš„å® ç‰©ç¤¾äº¤å¹³å°"/>
 
 
   <style>
@@ -156,7 +156,7 @@
 	}
 
 
-							//×ó²à
+							//å·¦ä¾§
 	#left{
 		width:320px;
 		float:left;
@@ -188,7 +188,7 @@
 	}
 	.sidebar_box h3{
 		font-size:14px;
-		font-weight:700;//¼Ó´Ö
+		font-weight:700;//åŠ ç²—
 		margin-left:20px;
 		width:290px;
 		height:32px;
@@ -252,7 +252,7 @@
 		color:#999;
 	}
 
-							//ÓÒ²à
+							//å³ä¾§
 
 	#right{
 		width:1250px;
@@ -305,7 +305,7 @@
 		margin-bottom:10px;
 		text-align:center;
 	}
-	.product_box .detail{     	 /*ÉÌÆ·ÈİÆ÷ÖĞµÄ¡°ÉÌÆ·ÏêÇé¡±°´Å¥ÑùÊ½*/
+	.product_box .detail{     	 /*å•†å“å®¹å™¨ä¸­çš„â€œå•†å“è¯¦æƒ…â€æŒ‰é’®æ ·å¼*/
 		margin:0 auto;
 		display:block;
 	}
@@ -322,7 +322,7 @@
 		background:#ccc;
 	}
 
-							//µ×²¿
+							//åº•éƒ¨
 
 	#foot{
 		width:100%;
@@ -351,17 +351,17 @@
 	<table>
 	<tr><td>
 	<div class="sidebar_box">
-		<a name="top"><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;·ÖÀà</h3></a>
+		<a name="top"><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;åˆ†ç±»</h3></a>
 
 		   <ul class="sidebar_list">
-			<li class="first"><a href="bianmu.html">±ß¾³ÄÁÑòÈ®</a></li>
-		 	<li><a href="bixiong.html">±ÈĞÜÈ®</a></li>
-			<li><a href="bomei.html">²©ÃÀÈ®</a></li>
-			<li><a href="hashiqi.html">¹şÊ¿Ææ</a></li>
-			<li><a href="jww.html">¼ªÍŞÍŞ</a></li>
-			<li><a href="lbld.html">À­²¼À­¶àÈ®</a></li>
-			<li><a href="qiutian.html">ÇïÌïÈ®</a></li>
-			<li class="last"><a href="samoye.html">ÈøÄ¦Ò®</a></li>
+			<li class="first"><a href="bianmu.html">è¾¹å¢ƒç‰§ç¾ŠçŠ¬</a></li>
+		 	<li><a href="bixiong.html">æ¯”ç†ŠçŠ¬</a></li>
+			<li><a href="bomei.html">åšç¾çŠ¬</a></li>
+			<li><a href="hashiqi.html">å“ˆå£«å¥‡</a></li>
+			<li><a href="jww.html">å‰å¨ƒå¨ƒ</a></li>
+			<li><a href="lbld.html">æ‹‰å¸ƒæ‹‰å¤šçŠ¬</a></li>
+			<li><a href="qiutian.html">ç§‹ç”°çŠ¬</a></li>
+			<li class="last"><a href="samoye.html">è¨æ‘©è€¶</a></li>
 		   </ul>
 
 	</div>
@@ -371,47 +371,47 @@
 	<tr><td>
 
 	<div class="sidebar_box">
-<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;³èÎïĞ¡¹·ÅÅĞĞ°ñ</h3>
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;å® ç‰©å°ç‹—æ’è¡Œæ¦œ</h3>
 		<br>
 		   <div class="bs_box">
 			<a href="bixiong.html"><img src="phb/bixiong.jpg" alt="image"/></a>
 			<br>
-			<h4>±ÈĞÜ</h4>
+			<h4>æ¯”ç†Š</h4>
 			<p class="price">&yen;3000</p>
 		   </div>
 		   <br>
 		   <div class="bs_box">
 			<a href="bianmu.html"><img src="phb/bianmu3.jpg" alt="image"/></a>
 			<br>
-			<h4>±ß¾³ÄÁÑòÈ®</h4>
+			<h4>è¾¹å¢ƒç‰§ç¾ŠçŠ¬</h4>
 			<p class="price">&yen;1800</p>
 		   </div>
 		   <br>
 		   <div class="bs_box">
 			<a href="hashiqi.html"><img src="phb/hashiqi.jpg" alt="image"/></a>
 			<br>
-			<h4>¹şÊ¿Ææ</h4>
+			<h4>å“ˆå£«å¥‡</h4>
 			<p class="price">&yen;1500</p>
 		   </div>
 		   <br>
 		   <div class="bs_box">
 			<a href="qiutian.html"><img src="phb/qiutian4.png" alt="image"/></a>
 			<br>
-			<h4>ÇïÌïÈ®</h4>
+			<h4>ç§‹ç”°çŠ¬</h4>
 			<p class="price">&yen;6000</p>
 		   </div>
 		   <br>
 		   <div class="bs_box">
 			<a href="lbld.html"><img src="phb/lbld1.jpg" alt="image"/></a>
 			<br>
-			<h4>À­²¼À­¶àÈ®</h4>
+			<h4>æ‹‰å¸ƒæ‹‰å¤šçŠ¬</h4>
 			<p class="price">&yen;1800</p>
 		   </div>
 		   <br>
 		   <div class="bs_box">
 			<a href="samoye.html"><img src="phb/samoye3.jpg" alt="image"/></a>
 			<br>
-			<h4>ÈøÄ¦Ò®</h4>
+			<h4>è¨æ‘©è€¶</h4>
 			<p class="price">&yen;1800</p>
 			<br>
 		   </div>
@@ -446,30 +446,30 @@
 	<tr><td>
 
      <div id="product">
-	<h1 style="padding-top:3px">ĞÂÆ·ÉÏ¼Ü</h1>
+	<h1 style="padding-top:3px">æ–°å“ä¸Šæ¶</h1>
 	  <div class="product_box">
-		<a href="bianmu.html"><img src="fengmian/bianmu3.jpg" alt="±ß¾³ÄÁÑòÈ®"/></a>
-		<p id="p">±ß¾³ÄÁÑòÈ®</p>
+		<a href="bianmu.html"><img src="fengmian/bianmu3.jpg" alt="è¾¹å¢ƒç‰§ç¾ŠçŠ¬"/></a>
+		<p id="p">è¾¹å¢ƒç‰§ç¾ŠçŠ¬</p>
 		<p class="product_price">&yen;1800</p>
-		<a href="bianmu.html" class="detail">ÉÌÆ·ÏêÇé</a>
+		<a href="bianmu.html" class="detail">å•†å“è¯¦æƒ…</a>
 	  </div>
 	  <div class="product_box">
-		<a href="bixiong.html"><img src="fengmian/bixiong.jpg" alt="±ÈĞÜ"/></a>
-		<p id="p">±ÈĞÜ</p>
+		<a href="bixiong.html"><img src="fengmian/bixiong.jpg" alt="æ¯”ç†Š"/></a>
+		<p id="p">æ¯”ç†Š</p>
 		<p class="product_price">&yen;3000</p>
-		<a href="bixiong.html" class="detail">ÉÌÆ·ÏêÇé</a>
+		<a href="bixiong.html" class="detail">å•†å“è¯¦æƒ…</a>
 	  </div>
 	  <div class="product_box">
-		<a href="bomei.html"><img src="fengmian/bomei1.jpg" alt="²©ÃÀ"/></a>
-		<p id="p">²©ÃÀ</p>
+		<a href="bomei.html"><img src="fengmian/bomei1.jpg" alt="åšç¾"/></a>
+		<p id="p">åšç¾</p>
 		<p class="product_price">&yen;2000</p>
-		<a href="bomei.html" class="detail">ÉÌÆ·ÏêÇé</a>
+		<a href="bomei.html" class="detail">å•†å“è¯¦æƒ…</a>
 	  </div>
 	  <div class="product_box">
-		<a href="hashiqi.html"><img src="fengmian/hashiqi.jpg" alt="¹şÊ¿Ææ"/></a>
-		<p id="p">¹şÊ¿Ææ</p>
+		<a href="hashiqi.html"><img src="fengmian/hashiqi.jpg" alt="å“ˆå£«å¥‡"/></a>
+		<p id="p">å“ˆå£«å¥‡</p>
 		<p class="product_price">&yen;1500</p>
-		<a href="hashiqi.html" class="detail">ÉÌÆ·ÏêÇé</a>
+		<a href="hashiqi.html" class="detail">å•†å“è¯¦æƒ…</a>
 	  </div>
 
 
@@ -477,28 +477,28 @@
 
 
 	  <div class="product_box">
-		<a href="jww.html"><img src="fengmian/jww.jpg" alt="¼ªÍŞÍŞ"/></a>
-		<p id="p">¼ªÍŞÍŞ</p>
+		<a href="jww.html"><img src="fengmian/jww.jpg" alt="å‰å¨ƒå¨ƒ"/></a>
+		<p id="p">å‰å¨ƒå¨ƒ</p>
 		<p class="product_price">&yen;2000</p>
-		<a href="jww.html" class="detail">ÉÌÆ·ÏêÇé</a>
+		<a href="jww.html" class="detail">å•†å“è¯¦æƒ…</a>
 	  </div>
 	  <div class="product_box">
-		<a href="lbld.html"><img src="fengmian/lbld2.jpg" alt="À­²¼À­¶àÈ®"/></a>
-		<p id="p">À­²¼À­¶àÈ®</p>
+		<a href="lbld.html"><img src="fengmian/lbld2.jpg" alt="æ‹‰å¸ƒæ‹‰å¤šçŠ¬"/></a>
+		<p id="p">æ‹‰å¸ƒæ‹‰å¤šçŠ¬</p>
 		<p class="product_price">&yen;1800</p>
-		<a href="lbld.html" class="detail">ÉÌÆ·ÏêÇé</a>
+		<a href="lbld.html" class="detail">å•†å“è¯¦æƒ…</a>
 	  </div>
 	  <div class="product_box">
-		<a href="qiutian.html"><img src="fengmian/qiutian4.png" alt="ÇïÌïÈ®"/></a>
-		<p id="p">ÇïÌïÈ®</p>
+		<a href="qiutian.html"><img src="fengmian/qiutian4.png" alt="ç§‹ç”°çŠ¬"/></a>
+		<p id="p">ç§‹ç”°çŠ¬</p>
 		<p class="product_price">&yen;6000</p>
-		<a href="qiutian.html" class="detail">ÉÌÆ·ÏêÇé</a>
+		<a href="qiutian.html" class="detail">å•†å“è¯¦æƒ…</a>
 	  </div>
 	  <div class="product_box">
-		<a href="samoye.html"><img src="fengmian/samoye3.jpg" alt="ÈøÄ¦Ò®"/></a>
-		<p id="p">ÈøÄ¦Ò®</p>
+		<a href="samoye.html"><img src="fengmian/samoye3.jpg" alt="è¨æ‘©è€¶"/></a>
+		<p id="p">è¨æ‘©è€¶</p>
 		<p class="product_price">&yen;1800</p>
-		<a href="samoye.html" class="detail">ÉÌÆ·ÏêÇé</a>
+		<a href="samoye.html" class="detail">å•†å“è¯¦æƒ…</a>
 	  </div>
      <div class="cleaner"></div>
 
@@ -513,8 +513,8 @@
 <div id="foot">
  <br>
   <div id="footer">
-     <p><a href="³èÎïÖ®¼Ò.html">Ê×Ò³</a>|<a href="³£¼ûÎÊÌâ.html">³£¼ûÎÊÌâ</a>|<a href="ÁªÏµ.html">ÁªÏµ</a>|<a href="#top">»Øµ½¶¥²¿</a></p>
-     Copyright &copy; &nbsp;<a href="³èÎïÖ®¼Ò.html">³èÎïÖ®¼Ò</a>&nbsp;&nbsp;2013&nbsp;&nbsp;&nbsp;&nbsp;ÈÈÏß£º400-420-1234&nbsp;&nbsp;ICP ±¸ 12345678ºÅ
+     <p><a href="å® ç‰©ä¹‹å®¶.html">é¦–é¡µ</a>|<a href="å¸¸è§é—®é¢˜.html">å¸¸è§é—®é¢˜</a>|<a href="è”ç³».html">è”ç³»</a>|<a href="#top">å›åˆ°é¡¶éƒ¨</a></p>
+     Copyright &copy; &nbsp;<a href="å® ç‰©ä¹‹å®¶.html">å® ç‰©ä¹‹å®¶</a>&nbsp;&nbsp;2013&nbsp;&nbsp;&nbsp;&nbsp;çƒ­çº¿ï¼š400-420-1234&nbsp;&nbsp;ICP å¤‡ 12345678å·
   </div>
 </div>
 </body>

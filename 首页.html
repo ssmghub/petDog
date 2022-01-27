@@ -2,9 +2,9 @@
 <html>
 <head>
 
- <meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-    <title>����֮��</title>
+    <title>宠物之家</title>
 
 	<!--SSM-->
    <link href="HOMEjsimg.css" rel="stylesheet" type="text/css">
@@ -17,19 +17,19 @@
  index=0,
  timer=null;
  
- // ���岢�����Զ����ź���
+ // 定义并调用自动播放函数
  timer = setInterval(autoPlay, 2000);
  
- // ��껮����������ʱֹͣ�Զ�����
+ // 鼠标划过整个容器时停止自动播放
  wrap.onmouseover = function () {
  clearInterval(timer);
  }
  
- // ����뿪��������ʱ������������һ��
+ // 鼠标离开整个容器时继续播放至下一张
  wrap.onmouseout = function () {
  timer = setInterval(autoPlay, 2000);
  }
- // �����������ֵ���ʵ�ֻ����л�����Ӧ��ͼƬ
+ // 遍历所有数字导航实现划过切换至对应的图片
  for (var i = 0; i < list.length; i++) {
  list[i].onmouseover = function () {
  clearInterval(timer);
@@ -43,7 +43,7 @@
  changePic(index);
  }
  
- // ����ͼƬ�л�����
+ // 定义图片切换函数
  function changePic (curIndex) {
  for (var i = 0; i < pic.length; ++i) {
  pic[i].style.display = "none";
@@ -57,8 +57,8 @@
  
  </script> 
 
-<meta name="keywords" content="����֮��"/>
-<meta name="description" content="����֮��Ϊ�����û��ṩ�˴�ӭ��һֻ�³��￪ʼ,ֱ������Ϊ�����������Ҫ��Ա��������з���,�����ڳ�Ϊ�������ĳ����罻ƽ̨"/>
+<meta name="keywords" content="宠物之家"/>
+<meta name="description" content="宠物之家为养宠用户提供了从迎接一只新宠物开始,直至它成为您生活里的重要成员所需的所有服务,致力于成为国内最大的宠物社交平台"/>
 	<!--SSM-->
 
 

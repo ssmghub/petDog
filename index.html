@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+ <meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+
+    <title>宠物狗</title>
+
+
+   <link href="jsimg.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript">
+ window.onload=function(){
+ var wrap=document.getElementById('wrap'),
+ pic=document.getElementById('pic').getElementsByTagName("li"),
+ list=document.getElementById('list').getElementsByTagName('li'),
+ index=0,
+ timer=null;
+ 
+ // 定义并调用自动播放函数
+ timer = setInterval(autoPlay, 2000);
+ 
+ // 鼠标划过整个容器时停止自动播放
+ wrap.onmouseover = function () {
+ clearInterval(timer);
+ }
+ 
+ // 鼠标离开整个容器时继续播放至下一张
+ wrap.onmouseout = function () {
+ timer = setInterval(autoPlay, 2000);
+ }
+ // 遍历所有数字导航实现划过切换至对应的图片
+ for (var i = 0; i < list.length; i++) {
+ list[i].onmouseover = function () {
+ clearInterval(timer);
+ index = this.innerText - 1;
+ changePic(index);
+ };
+ };
+ 
+ function autoPlay () {
+ if (++index >= pic.length) index = 0;
+ changePic(index);
+ }
+ 
+ // 定义图片切换函数
+ function changePic (curIndex) {
+ for (var i = 0; i < pic.length; ++i) {
+ pic[i].style.display = "none";
+ list[i].className = "";
+ }
+ pic[curIndex].style.display = "block";
+ list[curIndex].className = "on";
+ }
+ 
+ };
+ 
+ </script> 
+
+
+<meta name="keywords" content="宠物之家"/>
+<meta name="description" content="宠物之家为养宠用户提供了从迎接一只新宠物开始,直至它成为您生活里的重要成员所需的所有服务,致力于成为国内最大的宠物社交平台"/>
+
+
+  <style>
+	body{
+		margin:0 auto;
+		padding:0;
+		color:#999;
+		font-family:Tahoma,Geneva,sans-serif;
+		font-size:12px;
+		line-height:1.4em;
+		background-color:#665f5f;
+		background-repeat:repeat;
+	}
+	a:link,a:visited{
+		color:#0299aa;
+		font-weight:normal;
+		text-decoration:none;
+	}
+	a:hover{
+		text-decoration:underline;
+	}
+	p{
+		margin:0 0 10px 0;
+		padding:0;
+		//text-align:center;
+	}
+	img{
+		borde:none;
+	}
+	h1,h2,h3,h4,h5,h6{
+		color:#333;
+		font-weight:normal;
+	}
+	h1{
+		font-size:30px;
+		margin:0 0 30px 0;
+		padding:5px 0;
+	}
+	h2{
+		font-size:26px;
+		margin:0 0 25px;
+		padding:5px 0;
+	}
+	h3{
+		font-size:20px;
+		margin:0 0 20px;
+		padding:0;
+	}
+	h4{
+		font-size:16px;
+		margin:0 0 15px;
+		padding:0;
+	}
+	h5{
+		font-size:14px;
+		margin:0 0 10px;
+		padding:0;
+	}
+	h6{
+		font-size:12px;
+		margin:0 0 5px;
+		padding:0;
+	}
+	.clear{
+		clear:both;
+	}
+	.h10{
+		height:10px;
+	}
+	.h20{
+		height:20px;
+	}
+	.h30{
+		height:30px;
+	}
+	.h40{
+		height:40px;
+	}
+	.h50{
+		height:50px;
+	}
+	#body_wrapper{
+		width:100%;
+		margin:0px auto;
+	}
+	#wrapper{
+		width:1440px;
+		height:1300px;
+		margin:32px 38px 20px 37px;
+		padding:0;
+		background-color:white;
+
+	}
+
+
+							//左侧
+	#left{
+		width:320px;
+		float:left;
+		margin:0;
+		padding:0;
+	}
+
+
+	#sidebar{
+		width:320px;
+		float:left;
+		margin:0;
+		padding-left:14px;
+
+	}
+	.sidebar_box{
+		width:290px;
+		display:inline-block;
+		float:left;
+		font-size:12px;
+		margin:16px 14px;	
+		padding:0;
+		background:#f0f0f0;
+		border:1px solid #dbdbdb;
+		color:#999;
+		position:relative;
+		top:-22px;
+
+	}
+	.sidebar_box h3{
+		font-size:14px;
+		font-weight:700;//加粗
+		margin-left:20px;
+		width:290px;
+		height:32px;
+		line-height:32px;
+		margin:0;
+		padding:0;
+		background:url(kinds.png);
+		background-repeat:no-repeat;
+		background-position:center;
+		background-size:cover;
+		color:#2f2f2f;
+	}
+	#sidebar .sidebar_box .content{
+		padding:10px 10px 0;
+	}
+	#sidebar .sidebar_list{
+		margin:0;
+		padding:0 0 8px;
+		list-style:none;
+	}
+	#sidebar .sidebar_list li{
+		display:block;
+		margin:0;
+		padding:8px 12px;
+		border-top:1px solid #fff;
+		border-bottom:1px solid #d3d3d3;
+	}
+	#sidebar .sidebar_list li.first{
+		border-top:none;
+	}
+	#sidebar .sidebar_list li.last{
+		border-bottom:none;
+	}
+	#sidebar .sidebar_list li a{
+		color:#666;
+		text-decoration:none;
+	}
+	#sidebar .sidebar_list li a:hover{
+		color:#000;
+		text-decoration:none;
+	}
+	.bs_box{
+		clear:both;
+		margin-bottom:25px;
+		padding-left:13px;
+		line-height:2em;
+	}
+	.bs_box img{
+		float:left;
+		margin-right:10px;
+		border:2px solid #fff;
+		width:100px;
+		height:100px;
+	}
+	.bs_box h4{
+		margin-bottom:0;
+	}
+	.bs_box .price{
+		font-size:12px;
+		font-weight:700px;
+		color:#999;
+	}
+
+							//右侧
+
+	#right{
+		width:1250px;
+		float:right;
+		margin:0;
+		padding:0;
+	}
+
+	#content{
+		width:1200px;
+		float:right;
+		margin:0 auto;
+		padding-top:18px;
+		position:absolute;
+		left:310px;
+
+	}
+	#advertise{
+		width:1226px;
+		float:right;
+	}
+	#product{
+		width:1081px;;
+		float:right;
+		margin:10px auto;
+	}
+	.product_box{
+		float:left;
+		width:220px;
+		text-align:center;
+		margin:0px 10px 30px 0px;
+		padding:18px 0;
+		border:1px dotted #ccc;
+	}
+	.product_box img{
+		margin-bottom:5px;
+		width:123px;
+		height:123px;
+	}
+	.product_box #p{
+		color:#333;
+		font-size:14px;
+		margin:0 auto;
+		padding:7px;
+	}
+	.product_box .product_price{
+		color:#11bdd1;
+		font-size:14px;
+		font-weight:700;
+		margin-bottom:10px;
+		text-align:center;
+	}
+	.product_box .detail{     	 /*商品容器中的“商品详情”按钮样式*/
+		margin:0 auto;
+		display:block;
+	}
+	a.detail{
+		display:inline-block;
+		width:68px;
+		height:21px;
+		line-height:21px;
+		text-align:center;
+		font-size:10px;
+		text-align:center;
+		text-weight:bold;
+		color:#333;
+		background:#ccc;
+	}
+
+							//底部
+
+	#foot{
+		width:100%;
+		margin:0 auto;
+		padding:30x 10px;
+		text-align:center;
+	}
+	#footer{
+		margin:0 auto;
+		width:1500px;
+		padding:30px 10px;
+		color:#999;
+		text-align:center;
+
+		
+	}
+	#footer a{
+		color:#dcdcdc;
+	}
+  </style>
+</head>
+<body>
+<div id="body_wrapper">
+ <div id="wrapper">
+     <div id="sidebar">
+	<table>
+	<tr><td>
+	<div class="sidebar_box">
+		<a name="top"><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;分类</h3></a>
+
+		   <ul class="sidebar_list">
+			<li class="first"><a href="bianmu.html">边境牧羊犬</a></li>
+		 	<li><a href="bixiong.html">比熊犬</a></li>
+			<li><a href="bomei.html">博美犬</a></li>
+			<li><a href="hashiqi.html">哈士奇</a></li>
+			<li><a href="jww.html">吉娃娃</a></li>
+			<li><a href="lbld.html">拉布拉多犬</a></li>
+			<li><a href="qiutian.html">秋田犬</a></li>
+			<li class="last"><a href="samoye.html">萨摩耶</a></li>
+		   </ul>
+
+	</div>
+
+	</td></tr>
+	<br><br>
+	<tr><td>
+
+	<div class="sidebar_box">
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;宠物小狗排行榜</h3>
+		<br>
+		   <div class="bs_box">
+			<a href="bixiong.html"><img src="phb/bixiong.jpg" alt="image"/></a>
+			<br>
+			<h4>比熊</h4>
+			<p class="price">&yen;3000</p>
+		   </div>
+		   <br>
+		   <div class="bs_box">
+			<a href="bianmu.html"><img src="phb/bianmu3.jpg" alt="image"/></a>
+			<br>
+			<h4>边境牧羊犬</h4>
+			<p class="price">&yen;1800</p>
+		   </div>
+		   <br>
+		   <div class="bs_box">
+			<a href="hashiqi.html"><img src="phb/hashiqi.jpg" alt="image"/></a>
+			<br>
+			<h4>哈士奇</h4>
+			<p class="price">&yen;1500</p>
+		   </div>
+		   <br>
+		   <div class="bs_box">
+			<a href="qiutian.html"><img src="phb/qiutian4.png" alt="image"/></a>
+			<br>
+			<h4>秋田犬</h4>
+			<p class="price">&yen;6000</p>
+		   </div>
+		   <br>
+		   <div class="bs_box">
+			<a href="lbld.html"><img src="phb/lbld1.jpg" alt="image"/></a>
+			<br>
+			<h4>拉布拉多犬</h4>
+			<p class="price">&yen;1800</p>
+		   </div>
+		   <br>
+		   <div class="bs_box">
+			<a href="samoye.html"><img src="phb/samoye3.jpg" alt="image"/></a>
+			<br>
+			<h4>萨摩耶</h4>
+			<p class="price">&yen;1800</p>
+			<br>
+		   </div>
+			<br>
+	</div>
+	</td></tr>
+	</table>
+     </div>
+
+<div id="right">
+     <div id="content">
+	<table>
+	<tr><td>
+     <div id="advertise">
+<div class="wrap" id="wrap">
+ <ul id="pic">
+ <li><img src="advertise/bianmu3.jpg" width="1055px" height=550px" alt=""></li>
+ <li><img src="advertise/hashiqi3.jpg" width="1055px" height="550px"  alt=""></li>
+ <li><img src="advertise/qiutian2.jpg" width="1055px" height="550px"  alt=""></li>
+ <li><img src="advertise/samoye1.jpg" width="1055px" height="550px"  alt=""></li> 
+ </ul>
+ <ol id="list">
+ <li class="on">1</li>
+ <li>2</li>
+ <li>3</li>
+ <li>4</li>
+ </ol>
+ </div>
+     </div>
+
+	</td></tr>
+	<tr><td>
+
+     <div id="product">
+	<h1 style="padding-top:3px">新品上架</h1>
+	  <div class="product_box">
+		<a href="bianmu.html"><img src="fengmian/bianmu3.jpg" alt="边境牧羊犬"/></a>
+		<p id="p">边境牧羊犬</p>
+		<p class="product_price">&yen;1800</p>
+		<a href="bianmu.html" class="detail">商品详情</a>
+	  </div>
+	  <div class="product_box">
+		<a href="bixiong.html"><img src="fengmian/bixiong.jpg" alt="比熊"/></a>
+		<p id="p">比熊</p>
+		<p class="product_price">&yen;3000</p>
+		<a href="bixiong.html" class="detail">商品详情</a>
+	  </div>
+	  <div class="product_box">
+		<a href="bomei.html"><img src="fengmian/bomei1.jpg" alt="博美"/></a>
+		<p id="p">博美</p>
+		<p class="product_price">&yen;2000</p>
+		<a href="bomei.html" class="detail">商品详情</a>
+	  </div>
+	  <div class="product_box">
+		<a href="hashiqi.html"><img src="fengmian/hashiqi.jpg" alt="哈士奇"/></a>
+		<p id="p">哈士奇</p>
+		<p class="product_price">&yen;1500</p>
+		<a href="hashiqi.html" class="detail">商品详情</a>
+	  </div>
+
+
+		<div class="cleaner"></div>
+
+
+	  <div class="product_box">
+		<a href="jww.html"><img src="fengmian/jww.jpg" alt="吉娃娃"/></a>
+		<p id="p">吉娃娃</p>
+		<p class="product_price">&yen;2000</p>
+		<a href="jww.html" class="detail">商品详情</a>
+	  </div>
+	  <div class="product_box">
+		<a href="lbld.html"><img src="fengmian/lbld2.jpg" alt="拉布拉多犬"/></a>
+		<p id="p">拉布拉多犬</p>
+		<p class="product_price">&yen;1800</p>
+		<a href="lbld.html" class="detail">商品详情</a>
+	  </div>
+	  <div class="product_box">
+		<a href="qiutian.html"><img src="fengmian/qiutian4.png" alt="秋田犬"/></a>
+		<p id="p">秋田犬</p>
+		<p class="product_price">&yen;6000</p>
+		<a href="qiutian.html" class="detail">商品详情</a>
+	  </div>
+	  <div class="product_box">
+		<a href="samoye.html"><img src="fengmian/samoye3.jpg" alt="萨摩耶"/></a>
+		<p id="p">萨摩耶</p>
+		<p class="product_price">&yen;1800</p>
+		<a href="samoye.html" class="detail">商品详情</a>
+	  </div>
+     <div class="cleaner"></div>
+
+     </div>
+	</td></tr>
+	</table>
+     </div>
+</div>
+ </div>
+</div>
+
+<div id="foot">
+ <br>
+  <div id="footer">
+     <p><a href="宠物之家.html">首页</a>|<a href="常见问题.html">常见问题</a>|<a href="联系.html">联系</a>|<a href="#top">回到顶部</a></p>
+     Copyright &copy; &nbsp;<a href="宠物之家.html">宠物之家</a>&nbsp;&nbsp;2013&nbsp;&nbsp;&nbsp;&nbsp;热线：400-420-1234&nbsp;&nbsp;ICP 备 12345678号
+  </div>
+</div>
+</body>
+</html>

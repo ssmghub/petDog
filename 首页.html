@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+
+    <title>宠物之家</title>
+
+	<!--SSM-->
+   <link href="HOMEjsimg.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript">
+ window.onload=function(){
+ var wrap=document.getElementById('wrap'),
+ pic=document.getElementById('pic').getElementsByTagName("li"),
+ list=document.getElementById('list').getElementsByTagName('li'),
+ index=0,
+ timer=null;
+ 
+ // 定义并调用自动播放函数
+ timer = setInterval(autoPlay, 2000);
+ 
+ // 鼠标划过整个容器时停止自动播放
+ wrap.onmouseover = function () {
+ clearInterval(timer);
+ }
+ 
+ // 鼠标离开整个容器时继续播放至下一张
+ wrap.onmouseout = function () {
+ timer = setInterval(autoPlay, 2000);
+ }
+ // 遍历所有数字导航实现划过切换至对应的图片
+ for (var i = 0; i < list.length; i++) {
+ list[i].onmouseover = function () {
+ clearInterval(timer);
+ index = this.innerText - 1;
+ changePic(index);
+ };
+ };
+ 
+ function autoPlay () {
+ if (++index >= pic.length) index = 0;
+ changePic(index);
+ }
+ 
+ // 定义图片切换函数
+ function changePic (curIndex) {
+ for (var i = 0; i < pic.length; ++i) {
+ pic[i].style.display = "none";
+ list[i].className = "";
+ }
+ pic[curIndex].style.display = "block";
+ list[curIndex].className = "on";
+ }
+ 
+ };
+ 
+ </script> 
+
+<meta name="keywords" content="宠物之家"/>
+<meta name="description" content="宠物之家为养宠用户提供了从迎接一只新宠物开始,直至它成为您生活里的重要成员所需的所有服务,致力于成为国内最大的宠物社交平台"/>
+	<!--SSM-->
+
+
+<style>
+</style>
+</head>
+<body>
+
+
+	<!--SSM-->
+     <div id="advertise">
+<div class="wrap" id="wrap">
+ <ul id="pic">
+ <li><img src="home/cats.jpg" width="1055px" height=560px" alt=""></li>
+ <li><img src="home/rabbit.jpg" width="1055px" height="560px"  alt=""></li>
+ <li><img src="home/samoye1.jpg" width="1055px" height="562px"  alt=""></li>
+ <li><img src="home/bird.jpg" width="1055px" height="562px"  alt=""></li> 
+ </ul>
+ <ol id="list">
+ <li class="on">1</li>
+ <li>2</li>
+ <li>3</li>
+ <li>4</li>
+ </ol>
+ </div>
+     </div>
+	<!--SSM-->
+
+
+
+</body>
+</html>

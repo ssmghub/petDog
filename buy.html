@@ -1,0 +1,106 @@
+<html>
+<head>
+  <title>购买详情</title>
+  <style>
+	body{
+		margin-top:25px;
+		padding-top:8px;
+		color:#333;
+		font-family:Tahoma,Geneva,sans-serif;
+		font-size:13px;
+		line-height:1.3em;
+		background-color:#665f5f;
+		background-repeat:repeat;
+		text-align:center;
+	}
+	#wrapper{
+		width:94%;
+		margin:0 auto;
+	}
+	#main{
+		margin-top:5px;
+		padding:8px;
+		background-color:white;
+		border:1px solid white;
+
+	}
+	h1{
+		color:#665f5f;
+		font-size:42px;
+		font-family:幼圆;
+		margin:12px 0 46px 0;
+		padding:25px 0 0 10px;
+	}
+	#footer{
+		margin:0 auto;
+		width:1200px;
+		padding:27px 10px;
+		color:#999;
+		text-align:center;
+		
+	}
+	#footer a{
+		color:grey;
+	}
+  </style>
+</head>
+<body>
+ <div id="wrapper">
+ <div id="main">
+   <a name="top"><h1 align="center">购&nbsp;买&nbsp;详&nbsp;情</h1></a>
+  <form>
+   <p align="center">买家姓名：
+	<input type="text" name="userName"   size="12"/>
+   </p>
+   <p align="center">登录密码：
+	<input type="password" name="pass"     size="12"/>
+   </p>  <br>
+   <p align="center">性别&nbsp;
+  	<input type="radio" name="sex" value="男"/>男
+  	<input type="radio" name="sex" value="女"     checked="checked"/>女
+   </p>  <br>
+   <p align="center">所购买狗狗种类&nbsp;
+  	<input type="checkbox" name="dogtype" value="边牧"/>边境牧羊犬
+    	<input type="checkbox" name="dogtype" value="比熊"/>比熊犬
+    	<input type="checkbox" name="dogtype" value="博美"/>博美犬
+    	<input type="checkbox" name="dogtype" value="哈士奇"/>哈士奇
+   </p> 
+   <p align="center">&nbsp;
+  	<input type="checkbox" name="dogtype" value="吉娃娃"/>吉娃娃
+    	<input type="checkbox" name="dogtype" value="拉布拉多"/>拉布拉多犬
+    	<input type="checkbox" name="dogtype" value="秋田犬"/>秋田犬
+    	<input type="checkbox" name="dogype" value="萨摩耶"/>萨摩耶
+   </p>  <br>
+   <p align="center">选择购买方式：
+	<input type="radio" name="buy" value="支付宝"/>支付宝
+	<input type="radio" name="buy" value="银行卡" checked="checked"/>银行卡
+	<input type="radio" name="buy" value="账户余额"/>账户余额
+	<input type="radio" name="buy" value="花呗"/>花呗
+   </p>  <br>
+   <p align="center">买家年龄&nbsp;
+	<select name="age">
+	   <option value="15岁以下">15岁以下</option>
+	   <option value="15岁--19岁">15岁--19岁	  </option>
+	   <option value="20岁--35岁" 	  selected="selected">20岁--35岁</option>
+	   <option value="36岁--50岁">36岁--50岁 		  </option>
+	   <option value="50岁以上">50岁以上</option>
+	</select>
+	联系方式：&nbsp;
+	<input type="text" name="email" size="16"/>
+   </p>  <br>
+   <p>收货地址：<br>
+	<textarea name="about" cols="40" rows="4"></textarea>
+   </p>  <br>
+   <p align="center">
+	<input type="submit" onClick="JavaScript:alert('您已购买成功！');" value="确认购买"/>
+	<input type="reset" value="重新填写"/>
+   </p>
+  </from>
+    <div id="footer"> <hr>
+     <p><a href="宠物之家.html">首页</a>|<a href="常见问题.html">常见问题</a>|<a href="联系.html">联系</a>|<a href="#top">回到顶部</a></p>
+     Copyright &copy; &nbsp;<a href="宠物之家.html">宠物之家</a>&nbsp;&nbsp;2013&nbsp;&nbsp;&nbsp;&nbsp;热线：400-420-1234&nbsp;&nbsp;ICP 备 12345678号
+  </div>
+ </div>
+ </div>
+</body>
+</html>
